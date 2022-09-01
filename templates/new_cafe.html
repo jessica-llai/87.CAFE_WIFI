@@ -28,8 +28,10 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{url_for('home')}}">Home</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{url_for('show_cafe')}}">Browse Cafe</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{url_for('register')}}">Register</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{url_for('login')}}">Login</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -51,14 +53,12 @@
     <div>
         {% import "bootstrap/wtf.html" as wtf %}
 
-
 <div class="container">
     <div class="add_cafe_form">
     <p>{{wtf.quick_form(form)}}</p>
-</div>
 
 </div>
-
+</div>
         </div>
     </body>
 </html>
